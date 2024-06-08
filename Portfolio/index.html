@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/89b463e5df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Screenshot 2024-05-31 214947.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <h1>Hi, I am <span>Isha</span> Sengar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------about--------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ishu-Photoroom-2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Currently pursuing a BTech degree with a specialization in Artificial Intelligence. 
+                        One of my greatest strengths lies in my ability to quickly grasp new concepts and technologies. 
+                        This attribute, coupled with my unwavering commitment to delivering high-quality work, 
+                        has enabled me to consistently meet and exceed expectations. Moreover, I firmly believe that continuous 
+                        learning is key to fostering creativity and innovation, traits that I actively cultivate in all aspects 
+                        of my work.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span></li>
+                                <li><span>Artificial Intelligence</span></li>
+                                <li><span>Natural Language<br>Processing</span></li>
+                                <li><span>Full-Stack</span></li>
+                                <li><span>Adaptive</span></li>
+                                <li><span>Punctual</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Feb 2024 - current</span><br>Machine Learning Research Intern at Shodhlab</li>
+                                <li><span>May 2023 - June 2023</span><br>Summer Intern at EduSkills Foundation</li>
+                                <li><span>Dec 2022 - Feb 2023</span><br>Artificial Intelligence Intern at IBM SkillsBuild</li>
+                                <li><span>Nov 2022 - Dec 2022</span><br>Winter Intern at Suvidha Foundation</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024</span><br>BTech with Specialization in Artificial Intelligence <br>
+                                Sage University Indore</li>
+                                <li><span>2019-2020</span><br>12th <br>St. Jude's Co-Ed School</li>
+                                <li><span>2017-2018</span><br>10th <br>St. Jude's Co-Ed School</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------services------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>Providing efficient and scalable solutions with readable Python code.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Delivering comprehensive web solutions from user interface design to server-side logic.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p>Creating systems that help make better decisions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------portfolio------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="music.png">
+                    <div class="layer">
+                        <h3>Music Recommendation System</h3>
+                        <p>The system captures the facial expressions of the user in real-time and determines their emotional state using the FER library then recommends music.</p>
+                        <a><i class="fa-solid fa-music"></i></a>
+                    </div>  
+                </div>
+                <div class="work">
+                    <img src="Screenshot 2024-06-07 142257.png">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>Amazon's front page using HTML and CSS, aiming to replicate the look and feel of one of the world's most popular e-commerce website.</p>
+                        <a><i class="fa-brands fa-amazon"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>title</h3>
+                        <p>description</p>
+                        <a href="">font awesom</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> sengarisha3@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 9009586990</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/isha-sengar-a8a2b0219/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/IshaSengar"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/isha_sengar_013/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Isha_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxNTUq4S54OaBETYBYxeuR3SkXdA8kjMkfzO4Khn0rqCkRdulLKNeKT16KzXXb_T8HBew/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+        form.reset();
+    })
+  </script>
+
+</body>
+</html>
